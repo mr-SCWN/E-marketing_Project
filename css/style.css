@@ -911,3 +911,20 @@ textarea:focus {
     font-size: 0.9rem;
   }
 }
+
+.section-stone .lead {
+  color: #2f3940 !important;
+  font-weight: 500;
+}
+
+/* Poprawka wyglądu licznika w jasnej sekcji */
+.section-stone .counter {
+  color: #151c21;
+  background: rgba(214, 40, 40, 0.08);
+  border: 1px solid rgba(214, 40, 40, 0.22);
+}
+
+.section-stone .counter span {
+  color: #8f1d1d;
+  font-weight: 900;
+}
