@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gameplay | UE Battle Prototype</title>
+  <meta name="description" content="Poznaj mechaniki UE Battle Prototype: walka mieczem, stamina, AI przeciwników, areny, fale wrogów i system nagród.">
+  <link rel="icon" href="assets/logo/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Główna nawigacja">
+    <a class="brand" href="index.html">
+      <img src="assets/logo/logo.svg" alt="Logo UE Battle Prototype">
+      <span>UE Battle Prototype</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Otwórz menu">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Start</a>
+      <a href="o-projekcie.html">O projekcie</a>
+      <a class="active" href="gameplay.html">Gameplay</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="beta-weekend.html">Beta Weekend</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a class="btn btn-primary btn-small" href="kontakt.html#download">Pobierz prototyp</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container reveal">
+      <div class="breadcrumbs">Start / Gameplay</div>
+      <span class="eyebrow">Mechaniki i systemy</span>
+      <h1>Gameplay</h1>
+      <p class="lead">UE Battle Prototype skupia się na pętli arenowej: walce wręcz, zarządzaniu staminą, przeciwnikach AI, falach wrogów i nagrodach po oczyszczeniu lokacji.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Player systems</span>
+        <h2>Rycerz, miecz, tarcza i stamina.</h2>
+        <p>Gracz kontroluje postać z perspektywy trzeciej osoby. Podstawą rozgrywki jest atakowanie, obrona, ruch oraz kontrolowanie zasobów.</p>
+      </div>
+
+      <div class="grid-4">
+        <article class="card reveal">
+          <div class="card-icon">⚔️</div>
+          <h3>Melee attacks</h3>
+          <p>Obrażenia zadawane są przez system ApplyDamage podczas ataków mieczem.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">🛡️</div>
+          <h3>Shield combat</h3>
+          <p>Tarcza wzmacnia fantasy charakter postaci i wspiera walkę w zwarciu.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">🟨</div>
+          <h3>Stamina</h3>
+          <p>Stamina może być zużywana przez akcje takie jak sprint lub atak, zależnie od konfiguracji.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">❤️</div>
+          <h3>Health / death</h3>
+          <p>Gracz posiada HP, a po śmierci uruchamiany jest Game Over UI.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-stone">
+    <div class="container">
+      <div class="feature-row">
+        <div class="media-frame reveal">
+          <img src="assets/images/deffending.png" alt="Rycerz w zwarciu z przeciwnikiem podczas walki w UE Battle Prototype">
+        </div>
+        <div class="reveal">
+          <span class="eyebrow">Combat feeling</span>
+          <h2>Walka jest najważniejszym elementem prototypu.</h2>
+          <p>Każde starcie wymaga kontroli pozycji, obserwowania przeciwnika i wykorzystywania momentu do ataku. System nie udaje pełnej produkcji RPG — skupia się na podstawowej, grywalnej pętli walki.</p>
+          <div class="badges">
+            <span class="badge">Third-person</span>
+            <span class="badge">Sword</span>
+            <span class="badge">Shield</span>
+            <span class="badge">Stamina</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Enemy types</span>
+        <h2>Trzy typy przeciwników zwiększają różnorodność starć.</h2>
+        <p>Przeciwnicy korzystają z lekkiej logiki Blueprint AI. Każdy typ posiada inne zachowanie i wymusza inny styl walki.</p>
+      </div>
+
+      <div class="grid-3">
+        <article class="card reveal">
+          <div class="card-icon">👺</div>
+          <h3>Goblin</h3>
+          <p>Podstawowy przeciwnik walczący wręcz. Może wykonywać zwykły atak oraz losowo aktywowany jump attack.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">🧙</div>
+          <h3>Mage</h3>
+          <p>Utrzymuje dystans, zatrzymuje się podczas castowania, strzela projectile i może teleportować się w obrębie areny.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">🪨</div>
+          <h3>Golem</h3>
+          <p>Silny przeciwnik z atakiem wręcz oraz AOE slam attack, którego gracz może unikać przez odpowiedni timing.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tight">
+    <div class="container">
+      <div class="feature-row reverse">
+        <div class="reveal">
+          <span class="eyebrow">Arena system</span>
+          <h2>Arena startuje falę przeciwników i otwiera drzwi po zwycięstwie.</h2>
+          <p>Po wejściu gracza w trigger arena aktywuje falę, spawnuje przeciwników w TargetPointach, śledzi liczbę żywych wrogów i otwiera drzwi po oczyszczeniu lokacji.</p>
+          <div class="badges">
+            <span class="badge">Arena trigger</span>
+            <span class="badge">Enemy wave</span>
+            <span class="badge">TargetPoints</span>
+            <span class="badge">Doors open</span>
+          </div>
+        </div>
+        <div class="media-frame reveal">
+          <img src="assets/images/damage.png" alt="Rycerz przygotowany do walki z przeciwnikiem na arenie">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-stone">
+    <div class="container">
+      <div class="feature-row">
+        <div class="media-frame reveal">
+          <img src="assets/images/upgrades.png" alt="Wybór nagrody po oczyszczeniu areny w UE Battle Prototype">
+        </div>
+        <div class="reveal">
+          <span class="eyebrow">Rewards</span>
+          <h2>Nagrody wzmacniają postać przed kolejnym starciem.</h2>
+          <p>Po oczyszczeniu areny gracz może otrzymać bonusy, takie jak dodatkowe HP, stamina, obrażenia lub leczenie. To prosty, ale skuteczny element progresji.</p>
+          <div class="badges">
+            <span class="badge">HP</span>
+            <span class="badge">Stamina</span>
+            <span class="badge">Damage</span>
+            <span class="badge">Heals</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tight">
+    <div class="container">
+      <div class="cta-band reveal">
+        <span class="eyebrow">Sprawdź sam</span>
+        <h2>Pobierz prototyp i przetestuj walkę arenową.</h2>
+        <p>Gameplay page prowadzi użytkownika do działania: pobrania prototypu albo zapisania się do testów.</p>
+        <div class="section-actions">
+          <a class="btn btn-primary" href="kontakt.html#download">Pobierz prototyp</a>
+          <a class="btn btn-secondary" href="kontakt.html#feedback">Zostaw feedback</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a class="brand" href="index.html">
+        <img src="assets/logo/logo.svg" alt="Logo UE Battle Prototype">
+        <span>UE Battle Prototype</span>
+      </a>
+      <p>Trzecioosobowy prototyp walki arenowej tworzony w Unreal Engine 5.6.</p>
+    </div>
+    <div>
+      <h3>Nawigacja</h3>
+      <div class="footer-links">
+        <a href="index.html">Start</a>
+        <a href="o-projekcie.html">O projekcie</a>
+        <a href="galeria.html">Galeria</a>
+      </div>
+    </div>
+    <div>
+      <h3>CTA</h3>
+      <div class="footer-links">
+        <a href="kontakt.html#download">Pobierz prototyp</a>
+        <a href="kontakt.html#beta">Dołącz do testów</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

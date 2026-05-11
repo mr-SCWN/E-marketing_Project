@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="260" viewBox="0 0 260 260" role="img" aria-labelledby="title desc">
+  <title id="title">UE Battle Prototype helmet logo</title>
+  <desc id="desc">Minimalistyczny hełm rycerza dla projektu UE Battle Prototype</desc>
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5f7f8"></stop>
+      <stop offset="0.45" stop-color="#9aa6ad"></stop>
+      <stop offset="1" stop-color="#39454d"></stop>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3d27a"></stop>
+      <stop offset="1" stop-color="#b17a22"></stop>
+    </linearGradient>
+  </defs>
+
+  <rect width="260" height="260" rx="56" fill="#1d252b"></rect>
+  <circle cx="130" cy="130" r="104" fill="#26323a" stroke="#c89b3c" stroke-width="7" opacity="0.95"></circle>
+
+  <path d="M76 122C76 77 99 51 130 51C161 51 184 77 184 122V169C184 195 165 212 130 212C95 212 76 195 76 169V122Z" fill="url(#steel)" stroke="#111820" stroke-width="7"></path>
+  <path d="M93 120H167V157H93Z" fill="#111820"></path>
+  <path d="M104 128H156" stroke="#c89b3c" stroke-width="8" stroke-linecap="round"></path>
+  <path d="M130 56V209" stroke="#26323a" stroke-width="8" opacity="0.75"></path>
+  <path d="M75 132L47 151L77 157" fill="url(#gold)" stroke="#111820" stroke-width="6" stroke-linejoin="round"></path>
+  <path d="M185 132L213 151L183 157" fill="url(#gold)" stroke="#111820" stroke-width="6" stroke-linejoin="round"></path>
+  <path d="M98 86C112 74 148 74 162 86" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" opacity="0.35"></path>
+</svg>

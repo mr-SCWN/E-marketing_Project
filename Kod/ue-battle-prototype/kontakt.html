@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt i społeczność | UE Battle Prototype</title>
+  <meta name="description" content="Pobierz prototyp UE Battle Prototype, dołącz do testów, zostaw opinię lub skontaktuj się z twórcą projektu.">
+  <link rel="icon" href="assets/logo/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Główna nawigacja">
+    <a class="brand" href="index.html">
+      <img src="assets/logo/logo.svg" alt="Logo UE Battle Prototype">
+      <span>UE Battle Prototype</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Otwórz menu">☰</button>
+    <div class="nav-links">
+      <a href="index.html">Start</a>
+      <a href="o-projekcie.html">O projekcie</a>
+      <a href="gameplay.html">Gameplay</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="beta-weekend.html">Beta Weekend</a>
+      <a class="active" href="kontakt.html">Kontakt</a>
+      <a class="btn btn-primary btn-small" href="#download">Pobierz prototyp</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="page-hero">
+    <div class="container reveal">
+      <div class="breadcrumbs">Start / Kontakt</div>
+      <span class="eyebrow">Kontakt i społeczność</span>
+      <h1>Kontakt</h1>
+      <p class="lead">Ta podstrona realizuje elementy lead generation: pobranie prototypu, zapis do testów, formularz feedbacku i linki społecznościowe.</p>
+    </div>
+  </section>
+
+  <section class="section" id="download">
+    <div class="container">
+      <div class="cta-band reveal">
+        <span class="eyebrow">Główne CTA</span>
+        <h2>Pobierz UE Battle Prototype</h2>
+        <p>Ten przycisk może prowadzić do pliku ZIP, strony itch.io, GitHub Releases albo Google Drive. Na etapie projektu można zostawić placeholder.</p>
+        <div class="section-actions">
+          <a class="btn btn-primary" href="#">Pobierz prototyp</a>
+          <a class="btn btn-secondary" href="gameplay.html">Najpierw zobacz gameplay</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tight section-stone" id="beta">
+    <div class="container">
+      <div class="grid-2">
+        <div class="reveal">
+          <span class="eyebrow">Lead generation</span>
+          <h2>Dołącz do testów</h2>
+          <p class="lead">Formularz pozwala zebrać kontakt do osób zainteresowanych kolejną wersją prototypu lub beta testami.</p>
+          <p class="counter"><span data-counter="128">0</span> zapisów testowych</p>
+        </div>
+
+        <form class="form card reveal" data-fake-submit>
+          <label>Imię
+            <input type="text" name="name" placeholder="np. Mateusz" required>
+          </label>
+
+          <label>E-mail
+            <input type="email" name="email" placeholder="twoj@email.com" required>
+          </label>
+
+          <label>Co Cię interesuje?
+            <select name="interest">
+              <option>Beta testy</option>
+              <option>Nowa wersja gry</option>
+              <option>Feedback dla projektu</option>
+              <option>Współpraca</option>
+            </select>
+          </label>
+
+          <button class="btn btn-primary" type="submit">Zapisz mnie</button>
+          <p class="form-note">Formularz jest przykładowy i nie zapisuje danych na serwerze.</p>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tight" id="feedback">
+    <div class="container">
+      <div class="grid-2">
+        <form class="form card reveal" data-fake-submit>
+          <h2>Zostaw opinię</h2>
+
+          <div class="form-row">
+            <label>Nick
+              <input type="text" name="nick" placeholder="Twój nick" required>
+            </label>
+
+            <label>Ocena
+              <select name="rating">
+                <option>5 - bardzo dobrze</option>
+                <option>4 - dobrze</option>
+                <option>3 - średnio</option>
+                <option>2 - do poprawy</option>
+              </select>
+            </label>
+          </div>
+
+          <label>Opinia
+            <textarea name="message" placeholder="Co warto poprawić albo rozwinąć?" required></textarea>
+          </label>
+
+          <button class="btn btn-primary" type="submit">Wyślij opinię</button>
+          <p class="form-status" aria-live="polite"></p>
+        </form>
+
+        <div class="reveal">
+          <span class="eyebrow">Społeczność</span>
+          <h2>Obserwuj rozwój projektu.</h2>
+          <p class="lead">Linki można później podmienić na prawdziwy Discord, YouTube, GitHub, itch.io albo TikTok.</p>
+
+          <div class="social-list">
+            <a class="social-link" href="#">Discord <span>Dołącz →</span></a>
+            <a class="social-link" href="#">YouTube <span>Obejrzyj →</span></a>
+            <a class="social-link" href="#">GitHub <span>Zobacz →</span></a>
+            <a class="social-link" href="#">Itch.io <span>Pobierz →</span></a>
+          </div>
+
+          <div class="section-actions">
+            <button class="btn btn-secondary" type="button" data-share>Udostępnij stronę</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tight">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Kontakt</span>
+        <h2>Napisz do twórcy</h2>
+        <p>Formularz kontaktowy ma sensowny powód kontaktu: feedback, testy, wsparcie projektu albo współpraca.</p>
+      </div>
+
+      <form class="form card reveal" data-fake-submit>
+        <div class="form-row">
+          <label>Imię
+            <input type="text" name="name" placeholder="Twoje imię" required>
+          </label>
+
+          <label>E-mail
+            <input type="email" name="email" placeholder="twoj@email.com" required>
+          </label>
+        </div>
+
+        <label>Temat
+          <select name="topic">
+            <option>Chcę zgłosić feedback</option>
+            <option>Chcę pomóc w testach</option>
+            <option>Chcę wesprzeć rozwój gry</option>
+            <option>Inna wiadomość</option>
+          </select>
+        </label>
+
+        <label>Wiadomość
+          <textarea name="message" placeholder="Napisz wiadomość..." required></textarea>
+        </label>
+
+        <button class="btn btn-primary" type="submit">Wyślij wiadomość</button>
+        <p class="form-status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a class="brand" href="index.html">
+        <img src="assets/logo/logo.svg" alt="Logo UE Battle Prototype">
+        <span>UE Battle Prototype</span>
+      </a>
+      <p>Trzecioosobowy prototyp walki arenowej tworzony w Unreal Engine 5.6.</p>
+    </div>
+    <div>
+      <h3>Nawigacja</h3>
+      <div class="footer-links">
+        <a href="index.html">Start</a>
+        <a href="gameplay.html">Gameplay</a>
+        <a href="galeria.html">Galeria</a>
+      </div>
+    </div>
+    <div>
+      <h3>CTA</h3>
+      <div class="footer-links">
+        <a href="#download">Pobierz prototyp</a>
+        <a href="#beta">Dołącz do testów</a>
+        <a href="#feedback">Zostaw opinię</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

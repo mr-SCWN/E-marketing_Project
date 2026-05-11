@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UE Battle Prototype | Arena combat prototype w Unreal Engine 5.6</title>
+  <meta name="description" content="UE Battle Prototype to trzecioosobowy prototyp walki arenowej w Unreal Engine 5.6. Walcz z falami przeciwników, wybieraj nagrody i przechodź dalej.">
+  <meta name="keywords" content="UE Battle Prototype, Unreal Engine 5.6, arena combat, gra indie, prototyp gry, Blueprint, walka mieczem">
+  <meta name="author" content="Ivan Kaliadzich">
+  <meta property="og:title" content="UE Battle Prototype">
+  <meta property="og:description" content="Wejdź na arenę. Pokonaj falę wrogów. Wybierz nagrodę.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/boss.png">
+  <link rel="icon" href="assets/logo/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Główna nawigacja">
+    <a class="brand" href="index.html">
+      <img src="assets/logo/logo.svg" alt="Logo UE Battle Prototype">
+      <span>UE Battle Prototype</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Otwórz menu">☰</button>
+    <div class="nav-links">
+      <a class="active" href="index.html">Start</a>
+      <a href="o-projekcie.html">O projekcie</a>
+      <a href="gameplay.html">Gameplay</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="beta-weekend.html">Beta Weekend</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a class="btn btn-primary btn-small" href="kontakt.html#download">Pobierz prototyp</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="reveal">
+        <span class="eyebrow">Third-person arena combat prototype</span>
+        <h1>UE Battle Prototype</h1>
+        <p class="lead">Wejdź na arenę. Pokonaj falę wrogów. Wybierz nagrodę. Sprawdź prototyp walki rycerza stworzony w Unreal Engine 5.6.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="kontakt.html#download">Pobierz prototyp</a>
+          <a class="btn btn-secondary" href="gameplay.html">Zobacz gameplay</a>
+        </div>
+      </div>
+
+      <aside class="hero-panel reveal" aria-label="Podgląd gry">
+        <img src="assets/images/boss.png" alt="Rycerz walczący z dużym przeciwnikiem w UE Battle Prototype">
+        <div class="stats-row">
+          <div class="stat"><strong>3</strong><span>typy przeciwników</span></div>
+          <div class="stat"><strong>UE5</strong><span>Unreal Engine 5.6</span></div>
+          <div class="stat"><strong>BP</strong><span>głównie Blueprinty</span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section-stone">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Core loop</span>
+        <h2>Prosta pętla arenowa, która od razu pokazuje cel gry.</h2>
+        <p>Projekt koncentruje się na krótkiej i czytelnej strukturze rozgrywki: wejście na arenę, walka z falą przeciwników, oczyszczenie lokacji, wybór nagrody i przejście dalej.</p>
+      </div>
+
+      <div class="loop reveal">
+        <div class="loop-step">
+          <strong>1</strong>
+          <h3>Wejdź</h3>
+          <p>Gracz aktywuje arenę po wejściu w trigger.</p>
+        </div>
+        <div class="loop-step">
+          <strong>2</strong>
+          <h3>Walcz</h3>
+          <p>Przeciwnicy pojawiają się w wybranych punktach.</p>
+        </div>
+        <div class="loop-step">
+          <strong>3</strong>
+          <h3>Przetrwaj</h3>
+          <p>HP i stamina decydują o przebiegu walki.</p>
+        </div>
+        <div class="loop-step">
+          <strong>4</strong>
+          <h3>Wybierz</h3>
+          <p>Po walce gracz otrzymuje nagrodę.</p>
+        </div>
+        <div class="loop-step">
+          <strong>5</strong>
+          <h3>Idź dalej</h3>
+          <p>Po oczyszczeniu areny otwierają się drzwi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Dlaczego warto zagrać?</span>
+        <h2>To grywalny prototyp, a nie tylko prezentacja postaci.</h2>
+        <p>UE Battle Prototype posiada działające systemy walki, przeciwników, aren, UI oraz nagród, które razem tworzą pełną pętlę rozgrywki.</p>
+      </div>
+
+      <div class="grid-4">
+        <article class="card reveal">
+          <div class="card-icon">⚔️</div>
+          <h3>Walka wręcz</h3>
+          <p>Gracz używa miecza i tarczy, zarządza dystansem oraz momentem ataku.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">🟨</div>
+          <h3>Stamina</h3>
+          <p>System staminy wspiera decyzje dotyczące ataku, sprintu i obrony.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">👹</div>
+          <h3>Enemy AI</h3>
+          <p>Goblin, Mage i Golem posiadają różne zachowania oraz typy ataków.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card-icon">🎁</div>
+          <h3>Nagrody</h3>
+          <p>Po arenie gracz może wybrać bonus, np. HP, staminę, obrażenia albo leczenie.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tight">
+    <div class="container">
+      <div class="feature-row">
+        <div class="media-frame reveal">
+          <img src="assets/images/upgrades.png" alt="Ekran wyboru nagrody po walce w UE Battle Prototype">
+        </div>
+        <div class="reveal">
+          <span class="eyebrow">Progression</span>
+          <h2>Po walce wybierasz nagrodę i przygotowujesz się do następnej areny.</h2>
+          <p>System nagród daje graczowi prosty wybór rozwoju postaci. Dzięki temu każda arena nie jest odizolowaną walką, ale częścią większej pętli rozgrywki.</p>
+          <div class="badges">
+            <span class="badge">HP +20</span>
+            <span class="badge">Stamina +40</span>
+            <span class="badge">+20 DMG</span>
+            <span class="badge">+2 Heals</span>
+          </div>
+          <div class="section-actions">
+            <a class="btn btn-primary" href="gameplay.html">Poznaj mechaniki</a>
+            <a class="btn btn-secondary" href="galeria.html">Zobacz screeny</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-stone">
+    <div class="container">
+      <div class="section-heading center reveal">
+        <span class="eyebrow">Elementy wiarygodności</span>
+        <h2>Projekt ma konkretne systemy i kierunek rozwoju.</h2>
+        <p>Strona pokazuje nie tylko grafikę, ale też funkcjonalności: AI przeciwników, system aren, UI, nagrody i flow zwycięstwa lub porażki.</p>
+      </div>
+
+      <div class="grid-3">
+        <article class="card reveal">
+          <small>Przykładowa opinia użytkownika</small>
+          <h3>„Pętla arenowa jest czytelna.”</h3>
+          <p>Od razu wiadomo, co trzeba zrobić: wejść, pokonać falę i przejść dalej.</p>
+        </article>
+        <article class="card reveal">
+          <small>Przykładowa opinia użytkownika</small>
+          <h3>„System nagród motywuje do kolejnej próby.”</h3>
+          <p>Wybór bonusów po walce daje poczucie progresu.</p>
+        </article>
+        <article class="card reveal">
+          <small>Przykładowa opinia użytkownika</small>
+          <h3>„Różne typy wrogów zwiększają tempo gry.”</h3>
+          <p>Golem, Mage i Goblin wymagają innego podejścia do walki.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tight">
+    <div class="container">
+      <div class="grid-2">
+        <div class="reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Najczęstsze pytania</h2>
+          <p class="lead">Krótka sekcja FAQ zmniejsza niepewność użytkownika i ułatwia przejście do działania.</p>
+        </div>
+
+        <div class="faq reveal">
+          <div class="faq-item open">
+            <button class="faq-question" aria-expanded="true">Czy to pełna gra? <span>+</span></button>
+            <div class="faq-answer">
+              <p>Nie. To grywalny prototyp walki arenowej przygotowany w Unreal Engine 5.6.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Czy projekt ma AI przeciwników? <span>+</span></button>
+            <div class="faq-answer">
+              <p>Tak. Przeciwnicy używają lekkiej logiki Blueprint AI, bez konieczności użycia Behavior Tree.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Czy można zostawić feedback? <span>+</span></button>
+            <div class="faq-answer">
+              <p>Tak. Na stronie kontaktowej znajduje się formularz opinii i zapis do testów.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tight">
+    <div class="container">
+      <div class="cta-band reveal">
+        <span class="eyebrow">Action</span>
+        <h2>Pobierz prototyp i sprawdź system walki.</h2>
+        <p>Główne CTA jest spójne z celem marketingowym strony: zachęca użytkownika do pobrania grywalnego prototypu oraz zostawienia opinii.</p>
+        <div class="section-actions">
+          <a class="btn btn-primary" href="kontakt.html#download">Pobierz prototyp</a>
+          <a class="btn btn-secondary" href="kontakt.html#beta">Dołącz do testów</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a class="brand" href="index.html">
+        <img src="assets/logo/logo.svg" alt="Logo UE Battle Prototype">
+        <span>UE Battle Prototype</span>
+      </a>
+      <p>Trzecioosobowy prototyp walki arenowej tworzony w Unreal Engine 5.6.</p>
+    </div>
+    <div>
+      <h3>Nawigacja</h3>
+      <div class="footer-links">
+        <a href="o-projekcie.html">O projekcie</a>
+        <a href="gameplay.html">Gameplay</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+    </div>
+    <div>
+      <h3>CTA</h3>
+      <div class="footer-links">
+        <a href="kontakt.html#download">Pobierz prototyp</a>
+        <a href="kontakt.html#beta">Dołącz do testów</a>
+        <a href="kontakt.html#feedback">Zostaw opinię</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="popup-backdrop" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+  <div class="popup">
+    <button class="popup-close" aria-label="Zamknij popup">×</button>
+    <span class="eyebrow">Beta testy</span>
+    <h2 id="popup-title">Chcesz sprawdzić kolejną wersję?</h2>
+    <p>Dołącz do listy testów UE Battle Prototype i pomóż rozwinąć system walki, przeciwników oraz aren.</p>
+    <div class="section-actions">
+      <a class="btn btn-primary" href="kontakt.html#beta">Dołącz do testów</a>
+      <a class="btn btn-secondary" href="gameplay.html">Zobacz gameplay</a>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
